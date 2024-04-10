@@ -14,7 +14,7 @@
     <div class="container">
 
     @foreach($trains as $train)
-      @if($train->date >= '2024-04-10')
+      @if($train->date >= now())
     <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">{{$train->company}}</h5>
