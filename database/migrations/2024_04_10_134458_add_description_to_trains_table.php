@@ -15,6 +15,7 @@ return new class extends Migration
             $table->string('company', 100);
             $table->string('departure_station', 100);
             $table->string('arrival_station', 100);
+            $table->date('date');
             $table->time('departure_time');
             $table->time('arrival_time');
             $table->tinyText('train_code', 100);
@@ -31,6 +32,7 @@ return new class extends Migration
             $table->dropColumn('company');
             $table->dropColumn('departure_station');
             $table->dropColumn('arrival_station');
+            $table->dropColumn('date');
             $table->dropColumn('departure_time');
             $table->dropColumn('arrival_time');
             $table->dropColumn('train_code');
