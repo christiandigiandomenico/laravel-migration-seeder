@@ -17,14 +17,14 @@
     <div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">{{$train->company}}</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Stazione di partenza: {{$train->departure_station}}</h6>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Stazione di arrivo: {{$train->arrival_station}}</h6>
-          <p class="card-text">Orario di partenza: {{$train->departure_time}}</p>
-          <p class="card-text">Orario di arrivo: {{$train->arrival_time}}</p>
-          <p class="card-text">Codice treno: {{$train->train_code}}</p>
-          <p class="card-text">Numero carrozze: {{$train->train_carriage}}</p>
-          <p class="card-text">In orario: {{$train->on_schedule ? 'Sì' : 'No'}}</p>
-          <p class="card-text">Cancellato: {{$train->cancelled ? 'Sì' : 'No'}}</p>
+          <h6 class="card-subtitle mb-2 text-body-secondary"><span>Stazione di partenza:</span> {{$train->departure_station}}</h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary"><span>Stazione di arrivo:</span> {{$train->arrival_station}}</h6>
+          <p class="card-text"><span>Orario di partenza:</span> {{$train->departure_time}}</p>
+          <p class="card-text"><span>Orario di arrivo:</span> {{$train->arrival_time}}</p>
+          <p class="card-text"><span>Codice treno:</span> {{$train->train_code}}</p>
+          <p class="card-text"><span>Numero carrozze:</span> {{$train->train_carriage}}</p>
+          <p class="card-text"><span>In orario:</span> {{$train->on_schedule ? 'Sì' : 'No'}}</p>
+          <p class="card-text"><span>Cancellato:</span> {{$train->cancelled ? 'Sì' : 'No'}}</p>
         </div>
       </div>
     @endforeach
